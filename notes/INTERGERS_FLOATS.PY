@@ -17,5 +17,3 @@ friends = 4
 
 print( "Each of my friends can have", int(apples)//friends, "and i will have ", int(apples)%friends, "left over. ")"""
 
-
-
