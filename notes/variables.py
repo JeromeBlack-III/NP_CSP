@@ -1,4 +1,4 @@
 
-name = "Tia"
+name = input("enter name: ")
 
-print(name)
+print( "hi " +name+ " !")
