@@ -9,20 +9,23 @@ if (yesorno)=="yes" :
 else:
     print("Dont care, you're still playing")
 
+def show_board(board_spot):
+    board1= f" {board_spot[0]} | {board_spot[1]} | {board_spot[2]} \n"
+    board2= f" {board_spot[3]} | {board_spot[4]} | {board_spot[5]} \n"
+    board3= f" {board_spot[6]} | {board_spot[7]} | {board_spot[8]} \n"
+    complete_board= board1+board2+board3
+    return complete_board
+
 board_spot=[0,1,2,3,4,5,6,7,8]  
-board1= f" {board_spot[0]} | {board_spot[1]} | {board_spot[2]} \n"
-board2= f" {board_spot[3]} | {board_spot[4]} | {board_spot[5]} \n"
-board3= f" {board_spot[6]} | {board_spot[7]} | {board_spot[8]} \n"
-complete_board= board1+board2+board3
-
-print(complete_board)
-
-box_select= input("Select a box (0-8): ")
-
-board_spot[]= box_select
 
 
+while True:
+    complete_board= show_board(board_spot)
+    print(complete_board)
+    box_select= int(input("Select a box (0-8): "))
+    board_spot[box_select] = "X"
 
+    complete_board= show_board(board_spot)
 
 
 
