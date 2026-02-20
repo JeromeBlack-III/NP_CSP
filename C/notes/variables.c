@@ -9,7 +9,7 @@ int main(){
     int age; 
 
     printf("Tell me your name\n");
-    scanf("%d", &person);
+    scanf("%s", &person);
    
     printf("Tell me how old you are\n");
     scanf("%d", &age);
