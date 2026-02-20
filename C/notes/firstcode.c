@@ -9,7 +9,7 @@ printf("Tell me your name\n");
 scanf("%s", &person);
 
 
-printf("Hello %s ! Welcome to your first C program.",person);
+printf("Hello %s! Welcome to your first C program.",person);
 
 
 
