@@ -4,15 +4,11 @@
 
 int main(){
 
-int income [100];
-int rent [51];
-int utilities [51];
-int groceries [51];
-int trans [51];
-int inr = rent[10]/income[10];
-
-
-
+int income ;
+int rent;
+int utilities;
+int groceries;
+int trans;
 
 printf("Tell me your income\n");
 scanf("%d", &income);
@@ -28,13 +24,18 @@ printf("Tell me your groceries cost\n");
 scanf("%d", &groceries);
 
 printf("Tell me your transportation cost\n");
+
+
+
 scanf("%d", &trans);
+float inr = (float)rent/income;
+printf("%d is your rent, and that is %.2f precent of your income\n", rent, inr);
 
-printf("%d is your rent and that is %.2f precent of your income\n", income, inr);
+float inu = (float)utilities/income;
+printf("%d is your groceries, and that is %.2f*100 precent of your income\n", utilities, inu);
 
-
-
-
+float ing = (float)groceries/income;
+printf("%d is your groceries, and that is %.2f*100 precent of your income\n", groceries, ing);
 
 
 
