@@ -9,7 +9,7 @@ int rent [51];
 int utilities [51];
 int groceries [51];
 int trans [51];
-int inr = rent[100]/income[100];
+int inr = rent[10]/income[10];
 
 
 
