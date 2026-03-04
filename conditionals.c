@@ -11,8 +11,8 @@ int main(){
 
 
     if(grade >=90){
-        if (grade >=90){
-            if (grade > 93){
+        if (grade > 93){
+        
         printf("You have a %d precent. That is an A\n",grade);
             }else{
         printf("You have a %d precent. That is an A-\n",grade);
@@ -46,8 +46,8 @@ int main(){
         printf("We;come Admin!");
     }else{
         printf("Hello %s\n", name);
-
     }
+    
     
     
     return 0;
