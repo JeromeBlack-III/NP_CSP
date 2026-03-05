@@ -5,14 +5,14 @@ int main(){
 int i = 1;
     while (i <=50){
          i += 1;
-    if (i %3==0 i %5==0){
+    if (i %3==0 && %5==0){
         printf("FizzBuzz");
-    }else if (i %3==0);
-        print ("Fizz");
-    else if (i %5==0);
+    }else if (i %3==0){
+        printf("Fizz");
+    }else if (i %5==0){
         print ("Buzz");
-    else;
-        print(i);
+    }else if
+        printf(i);
         printf("%d\n", i);
         i++;
 
