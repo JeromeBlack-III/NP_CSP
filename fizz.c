@@ -4,18 +4,17 @@ int main(){
 
 int i = 1;
     while (i <=50){
-         i += 1;
-    if (i %3==0 && %5==0){
-        printf("FizzBuzz");
+    
+    if (i %3==0 && i %5==0){
+        printf("FizzBuzz\n");
     }else if (i %3==0){
-        printf("Fizz");
+        printf("Fizz\n");
     }else if (i %5==0){
-        print ("Buzz");
-    }else if
-        printf(i);
+        printf ("Buzz\n");
+    }else{
         printf("%d\n", i);
-        i++;
-
+     } i++;
+    
     }
 
 

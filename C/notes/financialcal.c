@@ -2,6 +2,14 @@
 #include <math.h>
 
 
+float incomeprecent(float cost, float income){
+    return cost/income *100;
+}
+
+
+
+
+
 int main(){
 
 int income ;
@@ -24,20 +32,19 @@ printf("Tell me your groceries cost\n");
 scanf("%d", &groceries);
 
 printf("Tell me your transportation cost\n");
-
-
-
 scanf("%d", &trans);
-float inr = (float)rent/income*100;
+
+
+float inr = incomeprecent(rent,income);
 printf("$%d is your rent, and that is %.2f  precent of your income\n", rent, inr);
 
-float inu = (float)utilities/income*100;
+float inu = incomeprecent(rent,utilities);
 printf("$%d is your utility expenses, and that is %.2f precent of your income\n", utilities, inu);
 
-float ing = (float)groceries/income*100;
+float ing = incomeprecent(rent,groceries);
 printf("$%d is your groceries expenses, and that is %.2f precent of your income\n", groceries, ing);
 
-float intr = (float)trans/income*100;
+float intr = incomeprecent(rent,trans);
 printf("$%d is your transportation expenses, and that is %.2f precent of your income\n", trans, intr);
 
 float save = (float)income*.1;
