@@ -6,15 +6,63 @@
 <head>
 
 <title>Advanced Notes on HTML</title>
+<!---styles are done in the HTML opening tag. This is bad practiuce to use--->
 <meta charset=""UTF-8>
+<!--- Embeded CSS goes inside of the head tagds using the <style> tags tag--->
+    <style>
+*{
+    background-color: blueviolet
+    
+
+
+
+
+}
+
+
+
+
+
+p{
+background-color: black;
+color: aqua;
+   font-size: 1em;
+}
+#ordered-list{
+    background-color: rgb(21, 92, 21);
+    color: #32a852;
+    text-align: right;
+
+
+}
+.odd{
+    background-color: yellow;
+    color:white;
+
+}
+h1{
+    text-align: center;
+    border: 2px solid yellow;
+
+
+
+}
+
+img{
+
+Width: 50%;
+
+}
+
+    </style>
 </head>
 <body>
 <h1> HTML Advanced Notes</h1>
-<div height="200px" width="200px" style="backround-color: blueviolet;">
+<div height="200px" width="200px" style="background-color: blueviolet;">
 
     <p>This is how you make an ordered (numbered) list</p>
 <ol>
- <li>Programming 2</li>
+ <li class="odd">  Programming 2</li>
 <li>Programming 2</li>
 <li>Computer Science Principles</li>
 <li>Lunch</li>
