@@ -9,11 +9,11 @@
     <style>
 
 body{
-    background-color: rgb(156, 24, 24)
+    background-color: rgb(40, 164, 196)
 }    
 title{
     text-align: center;
-    color:rgb(255, 218, 7);
+    color:rgb(0, 0, 0);
     font-weight: bold;
     font-family: Georgia;
 }
@@ -51,7 +51,7 @@ h3{
 
 .Facts{
       text-align: center;
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     font-weight: bold;
     font-family: Georgia;
 }
@@ -109,30 +109,32 @@ p {
 
  }
 
+      function dissapear2(){
+                if(document.getElementById("spe").style.display == "block"){
+                    document.getElementById("spe").style.display = "none"
+                }else{
+                document.getElementById("spe").style.display = "block"
+                }
+            }
+        function change2(){
+                document.getElementById("Frightmares").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuJpr1kQQzfg2QFqSoRh65dGSh5ziwByxAjQ&s"
+           
+         }
+
+ function changeout2(){
+                document.getElementById("Frightmares").src = "https://www.abc4.com/wp-content/uploads/sites/4/2024/09/Lagoon-FM4.jpeg?w=1280"
+
+ }
+
+
+
+
+
+
+
+
+
   </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -154,7 +156,7 @@ p {
 <li> Unlike many parks, Lagoon allows guests to bring their own coolers, food, and drinks, which saves money and offers a relaxed, customizable experience.</li>
 <li>The park is over 130 years old and features a century-old carousel, a classic 1921 wooden roller coaster, and a full-scale Pioneer Village that offers a trip back in time.</li> </ul>
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7Ntx1_f4XnnUFUsjz0ohh94UzfFmFBuK-0w&s" alt="Frightmares">
+<img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/0a/a4/51/surf-lagoon-waterpark.jpg?w=1200&h=-1&s=1" alt="WaterPark">
 
 </div>
 
@@ -186,7 +188,7 @@ p {
 
 </p>
 
-<img src="https://www.abc4.com/wp-content/uploads/sites/4/2024/09/Lagoon-FM4.jpeg?w=1280" alt="Frightmares">
+<img id="Frightmares" onmouseover="change2()" onmouseout="changeout2()" src="https://www.abc4.com/wp-content/uploads/sites/4/2024/09/Lagoon-FM4.jpeg?w=1280" alt="Frightmares">
 
 
 </div>
